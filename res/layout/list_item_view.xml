@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res/com.yi4all.synccloud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:flipInterval="1000"
+    android:gravity="center"
+    android:persistentDrawingCache="animation" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/serverNameTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text="Server Name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/serverStatusTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:text="" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/serverIPTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="IP"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/serverPortTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="Port"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/serverLastSyncTimeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="Last Update Time"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <com.yi4all.synccloud.widget.ProgressWheel
+    android:id="@+id/currentProgressPB"
+    android:layout_width="@dimen/progress_size"    
+android:layout_height="@dimen/progress_size"   
+ProgressWheel:text="connecting..."    
+ProgressWheel:textColor="#222"   
+ProgressWheel:textSize="14sp"   
+ProgressWheel:rimColor="#330097D6"   
+ProgressWheel:barLength="5dp"    
+ProgressWheel:barColor="#0097D6"   
+ProgressWheel:barWidth="7dp"   
+ProgressWheel:rimWidth="5dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/currentProgressTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="0/0"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/currentSpeedTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0kB/s" />
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+</ViewFlipper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">文件中转站</string>
+    <string name="server_name_hint">服务器名称</string>
+    <string name="server_ip_hint">IP 例如:192.168.0.1</string>
+    <string name="server_port_hint">端口 默认值:9000</string>
+    <string name="server_allow_delete">允许同步时删除服务器文件</string>
+    <string name="client_allow_delete">允许同步时删除客户端文件</string>
+	<string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="confirm_delete">是否确认删除这个服务器?</string>
+    <string name="offline">离线</string>
+	<string name="online">在线</string>
+	<string name="sync">正在同步</string>
+	<string name="connect">连接中</string>
+	<string name="last_sync_time_never">还未同步</string>
+	<string name="last_sync_time_just">刚刚同步</string>
+	<string name="last_sync_time_min">%1$s分钟前同步</string>
+	<string name="last_sync_time_hour">%1$s小时前同步</string>
+	<string name="last_sync_time_day">%1$s天前同步</string>
+</resources>
